@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: nodeapp-ingress
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+    - host: b2659cf2-c5f9-404a-98a5-c789a9adf67b.k8s.civo.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: nodeapp
+              servicePort: 8000

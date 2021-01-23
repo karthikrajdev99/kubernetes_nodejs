@@ -1,0 +1,28 @@
+# Shrink default JVM heap.
+esJavaOpts: "-Xmx128m -Xms128m"
+
+# Allocate spaces for memory pod
+resources:
+  requests:
+    cpu: "500m"
+    memory: "2Gi"
+  limits:
+    cpu: "1000m"
+    memory: "5Gi"
+
+# Request smaller persistent volumes.
+volumeClaimTemplate:
+  accessModes: [ "ReadWriteOnce" ]
+  storageClassName: "local-path"
+  resources:
+    requests:
+      storage: 100M
+
+# Replicas
+replicas: 1
+
+# MasterNodes
+minimumMasterNodes: 1
+
+# Cluster health-check parameter
+clusterHealthCheckParams: "wait_for_status=yellow&timeout=1s"

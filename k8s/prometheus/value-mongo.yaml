@@ -1,0 +1,6 @@
+mongodb:
+  uri: "mongodb+srv://karthik:Dna890.RnR@cluster0-7gvkw.mongodb.net/ecommerce_backend?retryWrites=true&w=majority"
+
+serviceMonitor:
+  additionalLabels:
+    release: prometheus
