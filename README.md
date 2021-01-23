@@ -9,7 +9,7 @@ Sample Nodejs application deployed with [Kubernetes](https://kubernetes.io)
  - `node-service.yaml`
  - Get mapped port for the app
  - `kubectl get service`
- - Visit k8s cluster provider domain in the browser `http://b2659cf2-c5f9-404a-98a5-c789a9adf67b.k8s.civo.com/docs/` in my case.
+ - Visit k8s cluster provider domain in the browser `http://b2659cf2-c5f9-404a-98a5-c789a9adf67b.k8s.civo.com/nodes/docs/` in my case.
 
 ## Services
 
