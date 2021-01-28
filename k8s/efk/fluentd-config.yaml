@@ -73,7 +73,7 @@ data:
       index_name "nodeapplogs"
       <buffer>
         @type file
-        path /opt/bitnami/fluentd/logs/buffers/nodeapp-logs.buffer
+        path /opt/bitnami/fluentd/logs/buffers/nodeapp.buffer
         flush_thread_count 2
         flush_interval 5s
       </buffer>
